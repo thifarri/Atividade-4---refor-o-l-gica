@@ -1,0 +1,66 @@
+Algoritmo "Atividade 4 - Encontro 2 - Linguagem de programação com variáveis tipadas e não tipada"
+// 
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 01/07/2021
+Var
+// Seção de Declarações das variáveis 
+nome, data, cpf,sexo, rg, email, endereco, emprego: caracter
+IDADE, TELEFONE: inteiro
+salario, imposto, salarioMin: real
+empregadoAtivo: logico
+declarar: real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+//ENTRADA
+   Escreval("Bem vindo a empresa X, já iremos calcular seu importo de renda.")
+   Escreval ("Mas antes: ")
+   Escreval("qual seu nome?")
+   leia(nome)
+   escreval ("Qual sua idade?")
+   leia(IDADE)
+   Escreval("Qual a seu sexo?")
+   leia(sexo)
+   Escreval("Qual a sua data de nascimento?")
+   leia(data)
+   Escreval("Qual seu CPF (insira os traços e pontos por favor)")
+   leia(cpf)
+   Escreval("Qual seu RG (insira os traços e pontos por favor)")
+   leia(rg)
+   escreval ("Qual seu email?")
+   leia (email)
+   escreval ("Qual seu endereço")
+   leia(endereco)
+   escreval ("Qual seu telefone")
+   leia(TELEFONE)
+   escreval ("Está em um emprego ativo atualmente? Sim ou Não?")
+   leia(emprego)
+   escreval ("Seu sálario é (sem pontos, virgulas e sem os centavos por favor)?")
+   leia(salario)
+
+//PROCESSAMENTO
+  salarioMin <- 1903   //Salario minimo pra se poder declarar imposto de renda
+   se (salarioMin<salario) entao
+      imposto <- salario*0.15
+   senao
+      imposto <- 0
+   fimse
+   
+   declarar <- salario + imposto
+
+
+//SAÍDA
+escreval(" ")
+
+     se (salario<declarar) entao
+    escreval ("Olá senhor (a)", nome, "possuidor (a) do CPF ", cpf, " e do RG ")
+    escreval ( rg, " seu imposto de renda deve ser declarado e possui valor de ")
+    escreval (imposto " reais")
+    
+    senao
+    escreval ("Olá senhor (a)", nome, "possuidor (a) do CPF ", cpf, " e do RG ")
+    escreval ( rg, " seu imposto de renda não precisa ser declarado")
+
+    fimse
+Fimalgoritmo
